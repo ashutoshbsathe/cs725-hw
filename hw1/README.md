@@ -7,7 +7,7 @@
 * Krishnakant Bhatt [@KKBhatt17](https://github.com/KKBhatt17)
 
 ## Setting up
-Make sure you have a python environment setup with latest versions of dependencies as listed in [`requirements.txt`](requirements.txt). If the latest versions don't work for you or you are unsure about the versions, contact the TAs.
+Make sure you have a python environment setup with latest versions of dependencies as listed in [`requirements.txt`](requirements.txt). Easiest way to install all the dependencies is to run `pip install -r requirements.txt`. If you have issues regarding the environment setup, contact the TAs at the earliest.
 
 ## Instructions
 * Implement both the models (logistic regression and linear classifier) in [`model.py`](model.py). You should ideally modify only the functions in this file. If you think you need to modify anything else, contact the TAs.
