@@ -20,11 +20,13 @@ python train.py --dataset binary --model logistic_regression --num_epochs <num_e
 
 For linear classifier:
 ```
-python train.py --dataset digits --model linear_classifier --num_epochs <num_epochs> --learning_rate <learning_rate> --momentum <momentum>
+python train.py --dataset iris --model linear_classifier --num_epochs <num_epochs> --learning_rate <learning_rate> --momentum <momentum>
 ```
 
+The default values for each of these parameters are available in [`args.py`](args.py)
+
 ## Submission
-Once you are done with the assignments, copy weights corresponding to your best models for each dataset into [`submission/`](submission/) directory. Also copy the completed version (implementing both models) of [`model.py`](model.py) and your observation report (with filename `report.pdf`) into the same directory. Overall, make sure your [`submission`](submission/) folder looks as below. This is crucial since the assignment will be autograded:
+Once you are done with both the tasks, copy weights corresponding to your best models for each dataset into [`submission/`](submission/) directory. Also copy the completed version (implementing both models) of [`model.py`](model.py) and your observation report (with filename `report.pdf`) into the same directory. Overall, make sure your [`submission`](submission/) folder looks as below. This is crucial since the assignment will be autograded:
 ```
 submission/
     model.py
