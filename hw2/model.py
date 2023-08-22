@@ -14,7 +14,7 @@ class LitGenericClassifier(pl.LightningModule):
         super().__init__()
         self.lr = lr
         self.loss_func = nn.CrossEntropyLoss()
-        self.model = nn.Sequential() # modify this in every instance
+        self.model = nn.Sequential() # modify this in individual model class
 
     def training_step(self, batch, batch_idx=0):
         """
@@ -151,7 +151,7 @@ class LitSimpleClassifier(LitGenericClassifier):
         super().__init__(lr=lr)
         self.model = nn.Sequential(
             nn.Linear(2, ...), # d = 2
-            ..., # build your model here using `torch.nn` modules
+            ..., # build your model here using `torch.nn.*` modules
             nn.Linear(..., 4)  # num_classes = 4
         )
 
@@ -162,7 +162,7 @@ class LitSimpleClassifier(LitGenericClassifier):
     def configure_optimizers(self):
         # choose an optimizer from `torch.optim.*`
         # use `self.lr` to set the learning rate
-        # other parameters may be hardcoded here
+        # other parameters (e.g. momentum) may be hardcoded here
         return torch.optim.<optim_name>(...)
 
 class LitDigitsClassifier(LitGenericClassifier):
@@ -170,7 +170,7 @@ class LitDigitsClassifier(LitGenericClassifier):
         super().__init__(lr=lr)
         self.model = nn.Sequential(
             nn.Linear(64, ...), # d = 64
-            ..., # build your model here using `torch.nn` modules
+            ..., # build your model here using `torch.nn.*` modules
             nn.Linear(.., 10)   # num_classes = 10
         )
     
@@ -181,5 +181,5 @@ class LitDigitsClassifier(LitGenericClassifier):
     def configure_optimizers(self):
         # choose an optimizer from `torch.optim.*`
         # use `self.lr` to set the learning rate
-        # other parameters may be hardcoded here
+        # other parameters (e.g. momentum) may be hardcoded here
         return torch.optim.<optim_name>(...)

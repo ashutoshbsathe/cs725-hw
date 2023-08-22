@@ -3,7 +3,7 @@ import sys
 import numpy as np
 from utils import load_model
 
-# Usage: python make_kaggle_submission.py <path-to-best-digits-ckpt>
+# Usage: `python make_kaggle_submission.py <path-to-best-digits-ckpt>`
 
 model = load_model('digits').load_from_checkpoint(sys.argv[1], map_location='cpu', lr=0)
 valid_x = torch.Tensor(np.load('./data/digits/valid_x.npy'))

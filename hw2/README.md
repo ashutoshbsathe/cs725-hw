@@ -41,4 +41,3 @@ submission/
 You can get a hint of the accuracy and loss values that autograder will use for grading your submission by running `python evaluate_submission.py` in this directory itself. The observation report should also contain roll numbers of both students in the team.
 
 Once you are satisfied with the submission, use `tar -cvzf <roll1>_<roll2>.tar.gz submission/` to create the final submission. Only the student with lower roll number in the group needs to upload this `.tar.gz` on Moodle.
-
