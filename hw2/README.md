@@ -1,5 +1,7 @@
 # CS725: Homework 2: Classification using neural networks
 
+![num_epochs=250 learning_rate=0 0005 20230822_11-33-01 training anim](https://github.com/ashutoshbsathe/cs725-hw/assets/22210756/d562ebfe-9016-48d9-b9f8-3d67384fd27d)
+
 ## TAs in-charge
 * Ashutosh Sathe [@ashutoshbsathe](https://github.com/ashutoshbsathe)
 * Krishnakant Bhatt [@KKBhatt17](https://github.com/KKBhatt17)
