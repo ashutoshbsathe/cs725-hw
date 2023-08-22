@@ -1,0 +1,7 @@
+tqdm
+numpy
+torch
+lightning
+tensorboard
+matplotlib
+simple_parsing
