@@ -29,7 +29,7 @@ class VisualizationCallback(pl.Callback):
 
     def on_train_epoch_end(self, trainer, pl_module):
         with torch.no_grad():
-            out = pl_module.valid_step((self.train_x, self.train_y))
+            out = pl_module.validation_step((self.train_x, self.train_y))
             self.train_losses.append(out['valid_loss'])
             self.train_accs.append(out['valid_acc'])
             self.pred_eval_y.append(pl_module.predict(self.eval_x).cpu().numpy())
