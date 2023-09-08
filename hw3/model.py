@@ -9,7 +9,7 @@ class NaiveBayes:
 
         """Start of your code."""
         """
-        X : np.array of shape (n,2)
+        X : np.array of shape (n,10)
         y : np.array of shape (n,)
         Create a variable to store number of unique classes in the dataset.
         Assume Prior for each class to be ratio of number of data points in that class to total number of data points.
@@ -31,7 +31,7 @@ class NaiveBayes:
     def predict(self, X):
         """Start of your code."""
         """
-        X : np.array of shape (n,2)
+        X : np.array of shape (n,10)
 
         Calculate the posterior probability using the parameters of the distribution calculated in fit function.
         Take care of underflow errors suitably (Hint: Take log of probabilities)
@@ -219,7 +219,7 @@ if __name__ == "__main__":
     validation_labels = validation_dataset[:, -1]
 
     # Visualize the data
-    visualise(train_datapoints, train_labels, "train_data.png")
+    # visualise(train_datapoints, train_labels, "train_data.png")
 
     # Train the model
     model = NaiveBayes()
