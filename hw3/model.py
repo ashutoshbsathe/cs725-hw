@@ -247,5 +247,5 @@ if __name__ == "__main__":
     save_model(model)
 
     # Visualize the predictions
-    visualise(validation_datapoints, validation_predictions, "validation_predictions.png")
+    # visualise(validation_datapoints, validation_predictions, "validation_predictions.png")
 
